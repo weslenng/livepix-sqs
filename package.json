@@ -1,0 +1,24 @@
+{
+  "name": "livepix-sqs",
+  "version": "0.1.0",
+  "main": "build/src/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "swc src -d build",
+    "start": "node build/src/main.js"
+  },
+  "author": "weslenng",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.787.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
+    "ws": "^8.18.1",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.7.3",
+    "@types/node": "^22",
+    "@types/ws": "^8.18.1"
+  }
+}
