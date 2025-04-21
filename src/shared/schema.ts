@@ -26,7 +26,7 @@ export const Notification = z.object({
             formatted: z.string(),
             value: z.number(),
           }),
-          author: z.string(),
+          author: z.string().nullable(), // Não tenho certeza se esse campo é nullable
           message: z.string().nullable()
         }),
       }),
